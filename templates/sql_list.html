@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/"><h2>Go to Home</h2></a>
+    <table border="1">
+        <thead>
+            <td><h4>&emsp;Name&emsp;</h4></td>
+            <td><h4>&emsp;Address&emsp;</h4></td>
+            <td><h4>&emsp;City&emsp;</h4></td>
+            <td><h4>&emsp;Pincode&emsp;</h4></td>
+        </thead>
+        {% for row in rows %}
+        <tr>
+            <td><h4>&emsp;{{row['name']}}&emsp;</h4></td>
+            <td><h4>&emsp;{{row['address']}}&emsp;</h4></td>
+            <td><h4>&emsp;{{row['city']}}&emsp;</h4></td>
+            <td><h4>&emsp;{{row['pin']}}&emsp;</h4></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
